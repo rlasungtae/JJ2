@@ -62,15 +62,7 @@
     </form>
     
     <div id="prediction-result" class="mt-3"></div>
-    <!-- 차트 이미지 -->
-    <div id="chart-container" class="mt-3">
-      <img
-        id="prediction-chart"
-        src=""
-        alt="Prediction Chart"
-        style="display: none; width: 100%; max-width: 600px"
-      />
-    </div>
+
     
 
     <script></script>
@@ -129,16 +121,6 @@
                   "Data is not in the expected format.";
               }
 
-              //차트
-              const chartImageElement =
-                document.getElementById("prediction-chart");
-              if (chartImageElement) {
-                chartImageElement.src =
-                  "nearest_countries.png" +
-                  "?_ts=" +
-                  new Date().getTime();
-                chartImageElement.style.display = "block";
-              }
             })
 
             .catch((error) => {
