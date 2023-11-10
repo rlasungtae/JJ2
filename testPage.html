@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="main.css">    
+    <title>여행, 어디로 가지?</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#">
+                <img src="img/로고.jpg">
+                <p>Where to Travel</p>
+            </a>
+        </div>
+        <div style="flex-grow: 1;"></div>
+        <div class="nav-center">Choose Your Destination</div>
+        <div style="flex-grow: 1;"></div>
+        <div class="nav-right">
+            <a href="main.html"><ul>Home</ul></a>
+            <a href="testPage.html"><ul>Test</ul></a>
+            <a href="more.html"><ul>More</ul></a>
+        </div>
+    </nav>
+    
+
+    <div class="testPagebg">
+        <div class="content-box">
+
+            <button id="start" class="start-button">시작하기</button>
+
+
+                
+            <div id="period" class="varBox">
+                <h4>기간</h4>
+                <div class="option-container">
+                    <button class="option-box box1" value="period1">1주일 이하</button>
+                    <button class="option-box box1" value="period2">1주일 ~ 2주일</button>
+                    <button class="option-box box1" value="period3">2주일 이상</button>
+                </div>
+                <progress class="progress-bar" value="10" max="120"></progress>
+            </div>
+
+
+
+            <div id="budget" class="varBox">
+                <h4>예산</h4>
+                <div class="option-container">
+                    <button class="option-box box1" value="budget1">50만원 이하</button>
+                    <button class="option-box box1" value="budget2">50 ~ 100만원</button>
+                    <button class="option-box box1" value="budget3">100 ~ 200만원</button>
+                    <button class="option-box box1" value="budget4">200 ~ 300만원</button>
+                    <button class="option-box box1" value="budget5">300만원 이상</button>
+                </div>
+
+                <progress class="progress-bar" value="00" max="120"></progress>
+            </div>
+
+
+
+
+
+            <div id="preferStyle" class="varBox">
+                <h4>여행지</h4>
+                <div class="option-container">
+                    <button id="tour" class="option-box box2 pS" value="preferStyle1">
+                        <span>관광지</span>
+                        <img src="/img/관광지.jpg">
+                    </button>
+                    <button id="survival" class="survival-box pS" value="preferStyle3">s<br>u<br>r<br>v<br>i<br>v<br>a<br>l</button>
+                    <button id="vacation" class="option-box box2 pS" value="preferStyle2">
+                        <span>휴양지</span>
+                        <img src="/img/휴양지.jpg">
+                    </button>
+                </div>
+                <progress class="progress-bar" value="20" max="120"></progress>
+            </div>
+
+
+
+
+
+            <div id="nangMan" class="varBox">
+                <h4>낭만</h4>
+                <div class="option-container">
+                    <button class="option-box box1" value="nangMan1">한 스푼</button>
+                    <button class="option-box box1" value="nangMan2">두 스푼</button>
+                    <button class="option-box box1" value="nangMan3">세 스푼</button>
+                    <button class="option-box box1" value="nangMan4">네 스푼</button>
+                    <button class="option-box box1" value="nangMan5">가득</button>
+                </div>
+                <progress class="progress-bar" value="30" max="120"></progress>
+            </div>
+
+
+
+            
+
+            <div id="continent" class="varBox">
+                <h4>대륙</h4>
+                <div class="option-container">
+                    <button class="option-box box1" value="continent1">남미</button>
+                    <button class="option-box box1" value="continent2">북미</button>
+                    <button class="option-box box1" value="continent3">아시아</button>
+                    <button class="option-box box1" value="continent4">아프리카</button>
+                    <button class="option-box box1" value="continent5">유럽</button>
+                    <button class="option-box box1" value="continent6">오세아니아</button>
+                    <button class="option-box box1" value="continent7">남극</button>
+                </div>
+                <button class="option-box next-btn">다음</button>
+                <progress class="progress-bar" value="40" max="120"></progress>
+                <p>※ 중복 선택 가능</p>
+            </div>
+
+
+
+
+   
+            <div id="traveler" class="varBox">
+                <h4>여행자</h4>
+                <div class="option-container">
+                    <button class="option-box box1">혼자</button>
+                    <button class="option-box box1">친구</button>
+                    <button class="option-box box1">연인</button>
+                    <button class="option-box box1">가족</button>
+                    <button class="option-box box1">기타</button>
+                </div>
+                <progress class="progress-bar" value="50" max="120"></progress>
+            </div>
+
+
+
+
+
+            <div id="age" class="varBox">
+                <h4>연령</h4>
+                <div class="option-container">
+                    <button class="option-box box1">10대</button>
+                    <button class="option-box box1">20대</button>
+                    <button class="option-box box1">30대</button>
+                    <button class="option-box box1">40대</button>
+                    <button class="option-box box1">50대 ~</button>
+                </div>
+                <progress class="progress-bar" value="60" max="120"></progress>
+            </div>
+
+
+
+
+
+            <div id="sex" class="varBox">
+                <h4>성별</h4>
+                <div class="option-container">
+                    <button id="male" class="option-box box1">남자</button>
+                    <button id="female" class="option-box box1">여자</button>
+                </div>
+                <progress class="progress-bar" value="70" max="120"></progress>
+            </div>
+
+
+
+            
+            <div id="pkgVSfree" class="varBox">
+                <h4>투어 종류</h4>
+                <div class="option-container">
+                    <button id="package" class="option-box box1">패키지 여행</button>
+                    <button id="free" class="option-box box1">자유 여행</button>
+                </div>
+                <progress class="progress-bar" value="90" max="120"></progress>
+            </div>
+
+
+
+            
+            <div id="tempo" class="varBox">
+                <h4>여행 템포</h4>
+                <div class="option-container">
+                    <button id="chill" class="option-box box2">
+                        <span>일정이 여유로운 여행</span>
+                        <img src="/img/P.jpeg" alt="">
+                    </button>
+                    <button id="tight" class="option-box box2">
+                        <span>일정이 빠듯한 여행</span>
+                        <img src="/img/J.png" alt="">
+                    </button>
+                </div>
+                <progress class="progress-bar" value="100" max="120"></progress>
+            </div>
+
+
+
+
+
+            <div id="food" class="varBox">
+                <h4>향신료 선호도</h4>
+                <div class="option-container">
+                    <button id="Gosu" class="option-box box2">
+                        <img src="/img/향신료O.png" alt="">
+                    </button>
+                    <button id="noGosu" class="option-box box2">
+                        <img src="/img/향신료X.png" alt="">
+                    </button>
+                </div>
+                <progress class="progress-bar" value="110" max="120"></progress>
+            </div>
+
+
+
+
+            <!-- 
+            선택지 갯수 
+            예산 = 5 / 050 50100 100200 200300 300~             변수1
+            기간 = 3 / ~7  7~14 14~                             변수2                          
+            선호 = 2 / 관광지 휴양지 서바이벌                    변수3
+            낭만 = 2 /                                          변수4
+            대륙 = 7                                            변수5
+            여행자 = 4 / 혼자 연인 가족 기타                    변수아님
+            나이 = 5 / 10 20 30 40 50~                          변수아님
+            성별 = 2                                            변수아님
+            투어 = 2 / 패키지여행 자유여행                       변수3          
+            템포 = 2 / 빡센일정 / chill~                         변수3          
+            음식 = 2 / 향신료 OX                                변수6
+            -->
+
+            <button id="load-result" class="start-button end-button">결과보기</button>
+
+
+
+
+            <div id="result" class="varBox">
+                <h4 style="margin-top: 20px;">결과</h4>
+                <div class="option-container">
+                    <button class="result-container">
+                        <img class="result-img" src="/img/로고.jpg" alt="">
+                        <h4 class="result-title">나라</h4>
+                    </button>
+                    <button class="result-container">
+                        <img class="result-img" src="/img/로고.jpg" alt="">
+                        <h4 class="result-title">나라</h4>
+                    </button>
+                    <button class="result-container">
+                        <img class="result-img" src="/img/로고.jpg" alt="">
+                        <h4 class="result-title">나라</h4>
+                    </button>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <script src="/countries.js"></script>
+    <script src="/main.js"></script>
+    <script src="/continents.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,401 @@
+body {
+    font-family: 'RozhaOne';
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'RozhaOne';
+    src : url(/font/RozhaOne-Regular.ttf)
+}
+
+.navbar {
+    height: 70px;
+    border-bottom: 2px solid blue;
+    font-family: RozhaOne;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar div {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav-left a {
+    display: flex;
+    color: black;
+}
+
+.nav-left img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.nav-left p {
+    padding-left: 10px;
+}
+
+
+.nav-right ul {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.mainbg{
+    height: 80vh;
+    background-image: url(/img/배경이미지2.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.mainbg h4 {
+    margin-top: 0px;
+    padding-top: 110px;
+    margin-bottom: 70px;
+    font-size: 50px;
+}
+
+.mainbg p {
+    font-size: 18px;
+    font-family: '기본폰트';
+}
+
+.mainbg button {
+    margin-top: 16px;
+    width: 130px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: '기본폰트';
+}
+
+.footer {
+    text-align: center;
+    font-family: 'RozhaOne';
+}
+
+.footer h4{
+    font-size: 16px;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.testPagebg{
+    background-color: black;
+    height: calc(100vh - 72px);
+    text-align: center;
+    overflow: hidden;
+}
+
+.testPagebg progress {
+    margin-top: 20px;
+}
+
+progress {
+    -webkit-appearance: none;  
+    appearance: none; 
+    width: 40vw;
+    position: absolute;
+    bottom: 10px;
+    right: 15vw;
+    
+}
+
+progress::-webkit-progress-bar {
+    height: 10px;   
+    background-color: white;
+    border: 0px solid white;  
+    border-radius: 10px;
+    
+}
+
+progress::-webkit-progress-value {
+    background-color: blue;
+    /* display: block; */
+    border-radius: 10px;
+}
+
+.content-box {
+    background-color: rgb(23, 23, 23);
+    width: 70vw;
+    height: 35vw;
+    display: inline-block;
+    margin-top: 70px;
+    position: relative;
+}
+
+.start-button {
+    margin-top: 200px;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 50px;
+    border: 3px solid blue;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    font-size: 36px;
+    top: 13vw;
+}
+
+.end-button {
+    display: none;
+    margin: auto;
+    margin-top: 200px;
+}
+
+
+
+.option-container {
+    display: flex;   
+    height: 80%;
+}
+
+.varBox {
+    height: 100%;
+    display: none;
+}
+
+.content-box h4 {
+    color: white;
+    font-size: 40px;    
+    margin-bottom: 0;
+}
+
+.content-box p {
+    color: white;
+    font-size: 12px;    
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.next-btn {
+    font-size: 12px;    
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+
+.option-box {
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 18px;
+}
+
+.box1 {
+    width: 10vw;
+    height: 14vw;
+}
+
+.box2 {
+    width: 30vw;
+    height: 22vw;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+.box2 span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-shadow: 1px 1px 4px black;    
+}
+
+.box2 img {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+}
+
+.survival-box {
+    height: 22vw;
+    margin: auto;
+    width: 3vw;
+    background-color: black;
+    color: red;
+    border-radius: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+
+svg{
+    width: 80vw;
+    color: white;
+}
+
+
+path {
+    fill: white;
+    stroke: blue;
+    stroke-width: 10px;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+.result-container {
+    width: 20vw;
+    height: 25vw;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.result-img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.varBox .result-title{
+    margin-top: 0;
+    font-size: 2vw;
+}
+
+.test {
+    display: block;
+}
+
+
+.continents svg {
+    height: 700px;
+}
+
+.SAmerica {
+    position: absolute;
+    right: -56px;
+    top: 180px;
+}
+
+.NAmerica {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.Asia {
+    position: absolute;
+    left: 86px;
+    top: 36px;
+}
+.Africa {
+    position: absolute;
+    left: 75px;
+    top: 90px;
+}
+
+.Antarctica {
+    position: absolute;
+    top: 350px;
+    left: 40px;
+}
+.Europe {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.Oceania {
+    position: absolute;
+    left: 230px;    
+    top: 170px;
+}
+
+.cont {
+    font-size: 30px;
+    z-index: 5;
+    color: red;
+}
+
+button:hover {
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blue,
+                0 0 0.8rem blue,
+                0 0 2.8rem blue,
+                inset 0 0 1.3rem blue;
+}
+
+button:focus {
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blue,
+                0 0 0.8rem blue,
+                0 0 2.8rem blue,
+                inset 0 0 1.3rem blue;
+}
+
+button:visited{
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blue,
+                0 0 0.8rem blue,
+                0 0 2.8rem blue,
+                inset 0 0 1.3rem blue;
+}
+
+
+
+
+@keyframes pulsate {
+    
+    100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px blue,
+        0 0 80px blue,
+        0 0 90px blue,
+        0 0 100px blue,
+        0 0 150px blue;
+    }
+
+    0% {
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px blue,
+      0 0 45px blue,
+      0 0 55px blue,
+      0 0 70px blue,
+      0 0 80px blue;
+  
+  }
+}
