@@ -304,6 +304,7 @@ path {
     width: 20vw;
     height: 25vw;
     margin: auto;
+    padding: 0;
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -314,12 +315,30 @@ path {
 
 .result-img{
     width: 100%;
+    max-height: 50%;
+    min-height: 50%;
     padding-bottom: 20px;
+}
+
+h1{
+    font-size: 10px;
+    color: rgb(187, 187, 187);
+    padding-left: 10px;
+    text-align: left;
+    word-spacing: 1px;
+}
+h2{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 20px;
+    text-align: left;
+    word-spacing: 1px;
 }
 
 .varBox .result-title{
     margin-top: 0;
     font-size: 2vw;
+    padding-bottom: 10px;
 }
 
 .test {
@@ -376,10 +395,20 @@ path {
     color: red;
 }
 
-button:hover {
+.start-button:hover{
     animation: pulsate 1.5s infinite alternate;  
-    border: 0.2rem solid #fff;
-    padding: 0.4em;
+    border: 0.1rem solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blue,
+                0 0 0.8rem blue,
+                0 0 2.8rem blue,
+                inset 0 0 1.3rem blue;    
+}
+
+.option-box:hover {
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.1rem solid #fff;
     box-shadow: 0 0 .2rem #fff,
                 0 0 .2rem #fff,
                 0 0 2rem blue,
@@ -388,22 +417,9 @@ button:hover {
                 inset 0 0 1.3rem blue;
 }
 
-button:focus {
+.option-box:focus {
     animation: pulsate 1.5s infinite alternate;  
-    border: 0.2rem solid #fff;
-    padding: 0.4em;
-    box-shadow: 0 0 .2rem #fff,
-                0 0 .2rem #fff,
-                0 0 2rem blue,
-                0 0 0.8rem blue,
-                0 0 2.8rem blue,
-                inset 0 0 1.3rem blue;
-}
-
-button:visited{
-    animation: pulsate 1.5s infinite alternate;  
-    border: 0.2rem solid #fff;
-    padding: 0.4em;
+    border: 0.1rem solid #fff;
     box-shadow: 0 0 .2rem #fff,
                 0 0 .2rem #fff,
                 0 0 2rem blue,

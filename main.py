@@ -35,7 +35,6 @@ async def predict(input_data: PredictionInput):
         
         # 모델로부터 예측 수행
         nearest_countries = model.predict(budget, days)
-        # print(nearest_countries)
 
         # 예측 결과를 JSON 문자열로 변환
         prediction_json = nearest_countries[['country', 'total-expense', 'average-day-of-staying']].to_json(force_ascii=False)

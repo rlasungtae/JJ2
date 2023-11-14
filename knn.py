@@ -45,7 +45,7 @@ class KNNModel:
         
         # 입력 데이터 스케일링 및 예측
         input_data_scaled = self.scaler.transform(input_data_df)
-        distances, indices = self.model.kneighbors(input_data_scaled)
+        distances, indices = self.model.kneighbors(input_data_scaled) 
 
         
         return self.data.iloc[indices[0]]

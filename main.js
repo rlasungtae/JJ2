@@ -152,9 +152,13 @@ for(var i=0; i<5; i++){
 // 대륙
 for(var i=0; i<7; i++){
 	document.querySelector('#continent').querySelectorAll('.box1')[i].addEventListener('click', function(e){
-    if (typeof userValue.continentV === "string") {
-			userValue.continentV = [userValue.continentV];
-		}
+    // if (typeof userValue.continentV === "string") {
+		// 	userValue.continentV = [userValue.continentV];
+		// }
+			document.querySelector('#continent').classList.remove('show');
+			document.querySelector('#traveler').classList.add('show');
+
+
     if (e.target.value) {
       userValue.continentV.push(e.target.value);
       
@@ -186,10 +190,10 @@ for(var i=0; i<7; i++){
 
 
 // 다음으로 넘어가는 기능
-document.querySelector('.next-btn').addEventListener('click', function(){
-	document.querySelector('#continent').classList.remove('show');
-	document.querySelector('#traveler').classList.add('show');
-})
+// document.querySelector('.next-btn').addEventListener('click', function(){
+// 	document.querySelector('#continent').classList.remove('show');
+// 	document.querySelector('#traveler').classList.add('show');
+// })
 
 
 
@@ -328,7 +332,7 @@ document.querySelector('#load-result').addEventListener('click', function(){
 		// continentV와 일치하는 경우 가중치 2
 		for (const continent of userValue.continentV) {
 			if (continent === country.continent) {
-				Count += 2; 
+				Count += 10; 
 			}
 		}
 
@@ -360,16 +364,38 @@ document.querySelector('#load-result').addEventListener('click', function(){
 
 
 
-
-	// 결과 출력
 	
 // matchingCounts 배열에서 상위 3개의 국가를 가져옴
 var topMatches = matchingCounts.slice(0, 3);
 console.log(topMatches);
 
-document.querySelectorAll('.result-title')[0].innerHTML = topMatches[0].country;
-document.querySelectorAll('.result-title')[1].innerHTML = topMatches[1].country;
-document.querySelectorAll('.result-title')[2].innerHTML = topMatches[2].country;
+
+// 상위 3개 매칭 국가의 이름, 이미지 설정
+for (let i = 0; i < 3; i++) {
+	const imgElement = document.querySelectorAll('.result-img')[i];
+	const countryImage = countries.find(country => country.country === topMatches[i].country).Image; 
+	imgElement.src = countryImage;
+
+	document.querySelectorAll('.result-title')[i].innerHTML = topMatches[i].country;
+
+	const detailElement = document.querySelectorAll('.result-detail')[i];
+	const countryInfo = countries.find(country => country.country === topMatches[i].country).detail; 
+	detailElement.innerHTML = countryInfo;
+
+	const capitalElement = document.querySelectorAll('.result-capital')[i];
+	const countryCap = countries.find(country => country.country === topMatches[i].country).capital; 
+	capitalElement.innerHTML = "수도: " + countryCap;
+
+	const languageElement = document.querySelectorAll('.result-lang')[i];
+	const countryLang = countries.find(country => country.country === topMatches[i].country).lang; 
+	languageElement.innerHTML = "언어: " + countryLang;
+
+	const currencyElement = document.querySelectorAll('.result-currency')[i];
+	const countryCurrency = countries.find(country => country.country === topMatches[i].country).currency; 
+ currencyElement.innerHTML = "화폐: " + countryCurrency;
+
+}
+
 
 })
 
